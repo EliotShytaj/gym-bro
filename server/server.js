@@ -5,6 +5,12 @@ const express = require("express")
 //this creates an express app 
 const app = express()
 
+//middleware
+app.use((req, res, next) => {
+    console.log(req.path, req.method)
+    next()
+})
+
 //routes
 app.get("/", (req,res) => {
     res.json({mssg: "Welcome to the app"})
@@ -13,5 +19,5 @@ app.get("/", (req,res) => {
 
 // listen for requests 
 app.listen(process.env.PORT, () =>  {
-    console.log("Listening on port 400011")
+    console.log("Listening on port 4001")
 })
