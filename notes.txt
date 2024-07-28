@@ -1,0 +1,4 @@
+cd gym-bro
+npm install express
+npm install -g nodemon
+npm run dev ("to run the express file")
