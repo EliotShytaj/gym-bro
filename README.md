@@ -8,3 +8,6 @@ Backend Dependencies
 4. mongoose 
 
 Frontend Dependencies 
+
+1. React
+2. date-fns
